@@ -1,0 +1,22 @@
+<h1> Add Pizza </h1>
+<div class="large-6 columns">
+<%= form_for @pizza do |f| %>
+
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :description %>
+  <%= f.text_field :description %>
+
+  <%= f.label :slice_count %>
+  <%= f.number_field :slice_count %>
+
+  <%= f.label :price %>
+  <%= f.number_field :price %>
+
+  <%= f.label :location %>
+  <%= f.text_field :location %>
+
+  <%= f.submit "Add Pizza", class: "button" %>
+<% end %>
+</div>

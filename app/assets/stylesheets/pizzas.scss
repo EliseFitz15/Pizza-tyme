@@ -1,0 +1,21 @@
+// Place all the styles related to the Pizzas controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  background-image: url("pizza-ftr.jpg");
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+}
+
+.footer {
+  background-color: #000;
+  height: 300px;
+}
+
+.large-4 {
+  border: 2px black solid;
+  background:rgba(255,255,255,0.5);
+}

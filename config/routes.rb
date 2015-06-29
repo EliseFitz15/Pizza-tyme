@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
-  root 'homes#index'
+  root 'pizzas#index'
+    resources :pizzas, only: [:index, :new, :create] do
+      resources :slices, only: [:new]
+    end
+
   devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

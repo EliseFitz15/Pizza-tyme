@@ -1,0 +1,24 @@
+  <h1> Grab a slice or two </h1>
+
+  <div class="row">
+    <div class="large-4 columns">
+      <img src="--pie chart--"/>
+        <div>
+        <% @pizzas.each do |pizza| %>
+        <h4><%= pizza.name %></h4>
+          <p>Description: <%= pizza.description %></p>
+          <p>Slice Count: <%= pizza.slice_count %></p>
+          <p>Location: <%= pizza.location %>, Cost: <%= pizza.price %></p>
+        <% end %>
+        </div>
+
+        <div class="whosein">
+          <ul>
+
+          </ul>
+        </div>
+        <div>
+          
+        </div>
+    </div>
+  </div>

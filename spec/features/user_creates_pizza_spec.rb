@@ -8,11 +8,11 @@ require 'rails_helper'
 feature "As a user
 I want to create a Pizza team
 and see it added on the home page" do
-
-visit 'pizzas/new'
-fill_in 'Type', with: "Hawaiian"
-fill_in 'Description', with: "Marinara, cheese with pineapple and ham toppings."
-fill_in 'Slice count', with: "8"
-
-click_button "Add Pizza Team"
+scenario "adds a pizza successfully" do
+  visit 'pizzas/new'
+  fill_in 'Type', with: "Hawaiian"
+  fill_in 'Description', with: "Marinara, cheese with pineapple and ham toppings."
+  fill_in 'Slice count', with: "8"
+  click_button "Add Pizza Team"
+end
 end
